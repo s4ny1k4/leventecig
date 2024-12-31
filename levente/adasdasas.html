@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merri Sziszveszter Cigány Levente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('levente.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            margin: 0;
+            padding: 0;
+        }
+        .meme-container {
+            max-width: 300px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .meme {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .meme img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .meme p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        .interactive-container {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+        }
+        .interactive-side {
+            display: flex;
+            align-items: center;
+        }
+        .static-image {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            z-index: 1;
+        }
+        .moving-image {
+            position: relative;
+            animation: moveInOut 2s ease-in-out infinite;
+            width: 150px;
+            height: 150px;
+            z-index: 2;
+        }
+        @keyframes moveInOut {
+            0%, 100% {
+                transform: translateX(-75px);
+            }
+            50% {
+                transform: translateX(75px);
+            }
+        }
+        @keyframes moveOutIn {
+            0%, 100% {
+                transform: translateX(75px);
+            }
+            50% {
+                transform: translateX(-75px);
+            }
+        }
+        .right .moving-image {
+            animation: moveOutIn 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="meme-container">
+        <h1 style="text-align: center;">Merri sziszveszter Levente</h1>
+
+        <div class="meme">
+            <img src="leventetypeshit.jpg" alt="This u">
+            <p>Bros new years resolution</p>
+        </div>
+
+        <div class="meme">
+            <img src="IMG_5437.jpg" alt="Hungrigga">
+            <p>Bro was hungry</p>
+        </div>
+
+        <div class="meme">
+            <img src="IMG_5435.jpg" alt="high">
+            <p>Bro was high</p>
+        </div>
+        
+        <div class="meme">
+            <img src="IMG_5436.jpg" alt="cig">
+            <p>cigany</p>
+        </div>
+
+        <a href="https://www.pornhub.com/gay/video/search?search=gay+porn" style="text-decoration: none; font-size: 1.5em;">Levente kedvenc pornó kategóriája,</a>
+
+        <a href="https://www.pornhub.com/video/search?search=furry" style="text-decoration: none; font-size: 1.5em;">A másik</a>
+    </div>
+
+    <div class="interactive-container">
+        <div class="interactive-side">
+            <img src="cock.jpg" alt="Moving Image" class="moving-image">
+            <img src="IMG_1124.jpg" alt="Static Image" class="static-image">
+        </div>
+        <div class="interactive-side right">
+            <img src="image.jpg" alt="Static Image" class="static-image">
+            <img src="cock2.png" alt="Moving Image" class="moving-image">
+        </div>
+    </div>
+</body>
+</html>
